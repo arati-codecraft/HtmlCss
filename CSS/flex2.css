@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .con{
+    width: 98%;
+    min-height: 100px;
+    background-color: crimson;
+    
+    
+} */
+.container
+{
+    width: 98%;
+    min-height: 100px;
+    margin: 15px;
+
+    background-color: salmon;
+    justify-content: center;
+}
+.header
+{
+   width: 100%;
+   height: 50px;
+   display: flex;
+   margin-top: 5px;
+
+}
+.header .logo
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 24, 158);
+    color: aliceblue;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.3em;
+   
+}
+
+ 
+     
+.menu {
+  width: 100%;
+  height: 60px;
+  background-color:rgb(4, 61, 13);
+  margin-top: 2px;
+}
+.menu ul {
+  list-style-type: none;
+  width: 100%;
+}
+.menu ul li {
+  display: inline-block;
+  padding-top: 15px;
+  margin-left: 5px;
+}
+.menu ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding: 10px;
+  text-align: center;
+}
+
+.section
+{
+    width: 100%;
+    height: 205px;
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+.section .s1
+{
+  width: 25%;
+  height: 200px;
+  background-color: rgb(224, 224, 238);
+  text-align: center;
+  
+}
+
+.section .s2
+{
+  width: 25%;
+  height: 200px;
+  background-color:rgb(241, 230, 230);
+  text-align: center;
+  
+}
+
+.section .s3
+{
+  width: 25%;
+  height: 200px;
+  background-color:rgb(236, 225, 229);
+  text-align: center;
+  
+}
+.section .s4
+{
+  width: 25%;
+  height: 200px;
+  background-color:rgb(219, 227, 229);
+  text-align: center;
+  
+}
+
+.parent
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: white;
+    margin-top: 3px;
+}
+.pagecontent
+{
+    width: 75%;
+    height: 392px;
+    background-color: rgb(191, 104, 228);
+    margin: 2px;
+    margin-top: 4px;
+    
+}
+
+ .bar
+{
+    width: 25%;
+    height: 392px;
+    background-color:rgb(234, 212, 12);
+   margin: 2px;
+   margin-top: 4px;
+   
+
+}
+

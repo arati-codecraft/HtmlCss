@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link rel = "stylesheet" href="task111.css">
+</head>
+<body>
+     <div class = "form-container">
+    <form>   
+        <h2>Personal Information</h2>
+        <table>
+        <tr>
+            <td><label> First Name <span class = "required">*</span>:</label></td>
+            <td><input type= "text" name = "fname" required></td>
+            <td rowspan = "6" class = "side-box">
+                <div class = "info-box">
+                    <b>Personal Information</b><br>
+                    Please enter your name and address as they are listed for your debit card, credit card, or bank account.
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label> Last Name <span class = "required">*</span>:</label></td>
+            <td><input type= "text" name = "lname" required></td>
+        </tr>
+
+        <tr>
+          <td><label>Address:</Address></label> </td>
+        <td>
+          <div class="address-row">
+            <input type="text" id="address1" name="address1" placeholder="">
+            <input type="text" id="address2" name="address2" placeholder="">
+          </div>
+        </td>
+        </tr>
+
+        <tr>
+            <td><label>City: </label></td>
+            <td><input type="text" name = "city"></td>
+        </tr>
+
+        <tr>
+            <td><label>State: </label></td>
+            <td><input type="text" name = "state"></td>
+        </tr>
+
+        <tr>
+            <td><label>Zip: </label></td>
+            <td><input type="text" name = "zip"></td>
+        </tr>
+        
+        <tr>
+            <td><label>Country <span class="required">*</span>:</label></td>
+            <td colspan = "2">
+                <select id ="Country" name="country" required>
+                    <option value = "">--- select --</option>
+                    <option value="">-- select --</option>
+                    <option>India</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Australia</option>
+                    <option>Other</option>
+                </select>
+                </td>
+        </tr>
+ 
+    </table>
+
+        <h2>Contact Information</h2>
+    <table>
+      <tr>
+        <td><label for="email">Email <span class="required">*</span>:</label></td>
+        <td>
+          <input type="email" id="email" name="email" required><br>
+          <span class="note">We will never sell or disclose your email address to anyone.</span>
+        </td>
+        <td rowspan="4" class="side-box">
+          <div class="info-box">
+            <b>Contact Information</b><br>
+            Please enter your full email address, for example, name@domain.com.<br><br>
+            It is important that you provide a valid, working email address that you have access to.
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="reemail">Re-enter Email <span class="required">*</span>:</label></td>
+        <td>
+          <input type="email" id="reemail" name="reemail" required><br>
+          <span class="note">Must match the email address you just entered.</span>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone <span class="required">*</span>:</label></td>
+        <td><input type="text" id="phone" name="phone" placeholder="() ___-_" required></td>
+      </tr>
+      <tr>
+        <td><label for="fax">Fax:</label></td>
+        <td><input type="text" id="fax" name="fax"></td>
+      </tr>
+    </table>
+    <div class="submit-row">
+      <button type="submit" class="btn">Submit</button>
+    </div>
+
+
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="task111.css">
+</head>
+<body>
+
+  <p class="note"><span class="star">*</span> Items marked with an asterisk are required</p>
+
+  <form>
+    <table class="main-table" cellpadding="6">
+
+      <!-- Personal Information Section -->
+      <tr>
+        <td colspan="2"><h3>– Personal Information</h3></td>
+      </tr>
+
+      <tr>
+        <td class="label">First Name <span class="star">*</span> :</td>
+        <td><input type="text" class="box"></td>
+      </tr>
+
+      <tr>
+        <td class="label">Last Name <span class="star">*</span> :</td>
+        <td><input type="text" class="box"></td>
+      </tr>
+
+      <tr>
+        <td class="label">Address :</td>
+        <td>
+          <input type="text" class="box small"> 
+          <input type="text" class="box small">
+        </td>
+      </tr>
+
+      <tr>
+        <td class="label">City :</td>
+        <td><input type="text" class="box"></td>
+      </tr>
+
+      <tr>
+        <td class="label">State/Province :</td>
+        <td><input type="text" class="box"></td>
+      </tr>
+
+      <tr>
+        <td class="label">Zip/Postal Code :</td>
+        <td><input type="text" class="box"></td>
+      </tr>
+
+      <tr>
+        <td class="label">Country <span class="star">*</span> :</td>
+        <td>
+          <select class="box">
+            <option>-- select --</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- Contact Information Section -->
+      <tr>
+        <td colspan="2"><h3>– Contact Information</h3></td>
+      </tr>
+
+      <tr>
+        <td class="label">Email <span class="star">*</span> :</td>
+        <td><input type="email" class="box"></td>
+      </tr>
+
+      <tr>
+        <td class="label">Re-enter Email <span class="star">*</span> :</td>
+        <td><input type="email" class="box"></td>
+      </tr>
+
+      <tr>
+        <td class="label">Phone <span class="star">*</span> :</td>
+        <td><input type="text" class="box" placeholder="() ___-_"></td>
+      </tr>
+
+      <tr>
+        <td class="label">Fax :</td>
+        <td><input type="text" class="box"></td>
+      </tr>
+
+    </table>
+  </form>
+
+  <div class="info-section">
+    <div class="info-box">
+      <h4>Personal Information</h4>
+      <p>Please enter your name and address as they are listed for your debit card, credit card, or bank account.</p>
+    </div>
+
+    <div class="info-box">
+      <h4>Contact Information</h4>
+      <p>Please enter your full email address, for example <strong>name@domain.com</strong>. <br>
+      It is important that you provide a valid, working email address that you have access to as it must be verified before you can use your account.</p>
+    </div>
+  </div>
+
+</body>
+</html>

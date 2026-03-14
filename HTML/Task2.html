@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+</head>
+<body>
+  <h1>Application Form</h1>
+
+  <form>
+    <table>
+      <tr>
+        <td><label for="fname">First Name:</label></td>
+        <td><input type="text" id="fname" placeholder=" " required></td>
+      </tr>
+      <tr>
+        <td><label for="lname">Last Name:</label></td>
+        <td><input type="text" id="lname" placeholder=" " required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" placeholder=" " required></td>
+      </tr>
+      <tr>
+        <td><label for="confirm">Confirm Email:</label></td>
+        <td><input type="email" id="confirm" placeholder=" " required></td>
+      </tr>
+      <tr>
+        <td><label for="company">Company:</label></td>
+        <td><input type="text" id="company" placeholder=" " required></td>
+      </tr>
+      <tr>
+        <td><label for="job">Job Title:</label></td>
+        <td><input type="text" id="job" placeholder=" "></td>
+      </tr>
+      <tr>
+        <td><label for="country">Country:</label></td>
+        <td>
+          <select id="country" required>
+            <option value="">Choose...</option>
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: right;">
+          <input type="submit" value="Submit your Enquiry">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

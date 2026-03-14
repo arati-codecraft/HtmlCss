@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Converter Template Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .breadcrumb {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .breadcrumb a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    .breadcrumb span {
+      margin: 0 5px;
+      color: #555;
+    }
+    h2 {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-left: 5px solid #007BFF;
+    }
+    .note {
+      background-color: #ffffcc;
+      border: 1px solid #cccc99;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    td {
+      padding: 8px;
+      vertical-align: top;
+    }
+    label {
+      font-weight: bold;
+    }
+    .required::after {
+      content: " *";
+      color: red;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+      width: 95%;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+    .radio-group {
+      display: flex;
+      gap: 20px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="breadcrumb">
+    <a href="#">Administration</a>
+    <span>&rarr;</span>
+    <a href="#">Dynamic Converter Admin</a>
+    <span>&rarr;</span>
+    Dynamic Converter New HTML Conversion Template Form
+  </div>
+
+  <h2>Template Details</h2>
+  <form>
+    <table>
+      <tr>
+        <td><label class="required" for="contentId">Content ID</label></td>
+        <td><input type="text" id="contentId" name="contentId" required></td>
+      </tr>
+      <tr>
+        <td><label class="required" for="type">Type</label></td>
+        <td>
+          <select id="type" name="type" required>
+            <option value="ADACCT">ADACCT - Acme Accounting Department</option>
+            <!-- Add more options if needed -->
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label class="required" for="title">Title</label></td>
+        <td><input type="text" id="title" name="title" required></td>
+      </tr>
+      <tr>
+        <td><label class="required" for="securityGroup">Security Group</label></td>
+        <td>
+          <select id="securityGroup" name="securityGroup" required>
+            <option value="Public">Public</option>
+            <!-- Add more options if needed -->
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label class="required" for="file">File</label></td>
+        <td><input type="text" id="file" name="file" value="sysadmin" required></td>
+      </tr>
+      <tr>
+        <td><label class="required" for="author">Author</label></td>
+        <td><input type="text" id="author" name="author" value="sysadmin" required></td>
+      </tr>
+      <tr>
+        <td><label class="required">Template Format</label></td>
+        <td class="radio-group">
+          <label><input type="radio" name="format" value="html" checked> HTML Conversion Template</label>
+          <label><input type="radio" name="format" value="classic"> Classic HTML Conversion Template</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label class="required" for="revision">Revision</label></td>
+        <td><input type="text" id="revision" name="revision" required></td>
+      </tr>
+      <tr>
+        <td><label for="folder">Folder</label></td>
+        <td><input type="text" id="folder" name="folder"></td>
+      </tr>
+      <tr>
+        <td><label for="hidden">Hidden</label></td>
+        <td><input type="checkbox" id="hidden" name="hidden"></td>
+      </tr>
+      <tr>
+        <td><label for="comments">Comments</label></td>
+        <td><input type="text" id="comments" name="comments"></td>
+      </tr>
+      <tr>
+        <td><label for="userAccess">User Access List</label></td>
+        <td><input type="text" id="userAccess" name="userAccess"></td>
+      </tr>
+      <tr>
+        <td><label for="deleteDate">Trash Delete Date</label></td>
+        <td><input type="date" id="deleteDate" name="deleteDate"></td>
+      </tr>
+      <tr>
+        <td><label for="deleteLocation">Trash Delete Location</label></td>
+        <td><input type="text" id="deleteLocation" name="deleteLocation"></td>
+      </tr>
+      <tr>
+        <td><label for="deleteUser">Trash Delete User</label></td>
+        <td><input type="text" id="deleteUser" name="deleteUser"></td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
